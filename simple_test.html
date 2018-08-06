@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC    
+  "-//W3C//DTD HTML 4.0 Transitional//EN">   
+<HTML>   
+<HEAD>   
+<TITLE> New Document </TITLE>   
+<script language="JavaScript"    
+   src="jsunit/app/jsUnitCore.js"></script>   
+<script language="JavaScript"    
+   src="simple.js"></script>   
+<script language="JavaScript">   
+function testValidArgs()   
+{   
+     assertEquals("2 + 2 is 4",    
+ 4, addTwoNumbers(2, 2));   
+}   
+function testWithNegativeNumbers()   
+{   
+     assertEquals("-2 + -2 is -4",    
+ -4, addTwoNumbers(-2, -2));   
+}   
+function exposeTestFunctionNames()   
+{   
+ var tests = new Array(2);   
+ tests[0] = "testValidArgs";   
+ tests[1] = "testWithNegativeNumbers";   
+ return tests;   
+}   
+</script>   
+</HEAD>   
+  
+<BODY>   
+test page for addTwoNumbers(value1, value2);   
+</BODY>   
+</HTML>  
